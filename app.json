@@ -1,0 +1,32 @@
+{
+    "id": "fb04b114-aa88-47e4-94ff-4f043bffb735",
+    "name": "HCP Customizations",
+    "publisher": "Tectura",
+    "version": "1.0.0.0",
+    "brief": "Adds a Packing Size field to item tracking and carries it through to the Item Ledger Entry.",
+    "description": "Adds Packing Size to Tracking Specification, Reservation Entry and Item Journal Line, and carries the value through posting onto Item Ledger Entry.",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "28.0.0.0",
+    "application": "28.0.0.0",
+    "idRanges": [
+        {
+            "from": 50000,
+            "to": 50149
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "17.0",
+    "features": [
+        "NoImplicitWith"
+    ]
+}
