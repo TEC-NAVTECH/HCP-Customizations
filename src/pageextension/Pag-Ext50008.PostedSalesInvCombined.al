@@ -1,5 +1,17 @@
 pageextension 50008 "Posted Sales Inv. Combined" extends "Posted Sales Invoice"
 {
+    layout
+    {
+        addafter("Due Date")
+        {
+
+            field("Cargo Receipt Remarks"; Rec."Cargo Receipt Remarks")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Cargo Receipt Remarks field.', Comment = '%';
+            }
+        }
+    }
     actions
     {
         addlast(processing)
@@ -17,7 +29,7 @@ pageextension 50008 "Posted Sales Inv. Combined" extends "Posted Sales Invoice"
                 var
                     SalesInvHeader: Record "Sales Invoice Header";
                 begin
-                    SalesInvHeader:=Rec;
+                    SalesInvHeader := Rec;
                     SalesInvHeader.SetRecFilter();
                     Report.RunModal(Report::"Combined Sales Invoice", true, false, SalesInvHeader);
                 end;

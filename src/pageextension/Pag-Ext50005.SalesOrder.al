@@ -31,9 +31,18 @@ pageextension 50005 "Sales Order" extends "Sales Order"
                 ToolTip = 'Specifies the preorder sales order status, copied from the customer. Used automatically when the sales document is sent for approval.';
             }
         }
+        addafter("Due Date")
+        {
+
+            field("Cargo Receipt Remarks"; Rec."Cargo Receipt Remarks")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Cargo Receipt Remarks field.', Comment = '%';
+            }
+        }
     }
-// No manual "Send for Approval" action anymore - the overdue
-// tolerance check now runs automatically as part of the standard
-// "Send Approval Request" action, exactly like the Credit Limit
-// Approval Workflow (see Cod50103 "Overdue Wkfl. Responses").
+    // No manual "Send for Approval" action anymore - the overdue
+    // tolerance check now runs automatically as part of the standard
+    // "Send Approval Request" action, exactly like the Credit Limit
+    // Approval Workflow (see Cod50103 "Overdue Wkfl. Responses").
 }

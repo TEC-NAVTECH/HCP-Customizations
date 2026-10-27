@@ -9,9 +9,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>PBIRB</am:Name>
-      <am:Version>15.7.1819.28</am:Version>
+      <am:Version>15.7.1816.327</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-09-15T12:50:18.9185130Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-09-29T09:30:00.8273300Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -1670,7 +1670,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.755in</Top>
+              <Top>0.63in</Top>
               <Left>4.77in</Left>
               <Height>0.25in</Height>
               <Width>1.2in</Width>
@@ -1747,7 +1747,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.755in</Top>
+              <Top>0.63in</Top>
               <Left>5.97in</Left>
               <Height>0.25in</Height>
               <Width>0.85in</Width>
@@ -1824,7 +1824,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.755in</Top>
+              <Top>0.63in</Top>
               <Left>6.82in</Left>
               <Height>0.25in</Height>
               <Width>0.65in</Width>
@@ -1901,7 +1901,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.755in</Top>
+              <Top>0.63in</Top>
               <Left>5.77in</Left>
               <Height>0.25in</Height>
               <Width>1.05in</Width>
@@ -1978,7 +1978,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.755in</Top>
+              <Top>0.63in</Top>
               <Left>6.82in</Left>
               <Height>0.25in</Height>
               <Width>0.65in</Width>
@@ -3425,6 +3425,39 @@
                 <PaddingBottom>1pt</PaddingBottom>
               </Style>
             </Textbox>
+            <Textbox Name="Textbox2">
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!Cargo_Receipt_Remarks.Value, "DataSet_Result")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.93556in</Top>
+              <Left>5.82in</Left>
+              <Height>0.25in</Height>
+              <Width>1.41667in</Width>
+              <ZIndex>52</ZIndex>
+              <Visibility>
+                <Hidden>=ReportItems!H_StampCaption.Value &lt;&gt; "CARGO RECEIPT"</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style />
         </PageHeader>
@@ -4054,6 +4087,9 @@
         </Field>
         <Field Name="Header_WorkDescription">
           <DataField>Header_WorkDescription</DataField>
+        </Field>
+        <Field Name="Cargo_Receipt_Remarks">
+          <DataField>Cargo_Receipt_Remarks</DataField>
         </Field>
         <Field Name="LayoutInstance_SequenceNo">
           <DataField>LayoutInstance_SequenceNo</DataField>

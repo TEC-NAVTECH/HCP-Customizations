@@ -23,5 +23,10 @@ tableextension 50005 "Sales Header" extends "Sales Header"
             DataClassification = ToBeClassified;
             OptionMembers = " ","Not Confirmed","Confirmed";
         }
+        field(50004; "Cargo Receipt Remarks"; Text[50])
+        {
+            Caption = 'Cargo Receipt Remarks';
+            DataClassification = CustomerContent;
+        }
     }
 }
