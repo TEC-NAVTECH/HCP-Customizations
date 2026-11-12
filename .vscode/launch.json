@@ -13,7 +13,7 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "18040903-e629-452c-a1a4-8418d0a69c5f",
-            "schemaUpdateMode": "Synchronize",
+            "schemaUpdateMode": "ForceSync",
             //"startupObjectId": 9307
             "startupObjectId": 143
         }

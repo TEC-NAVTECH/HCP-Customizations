@@ -5,7 +5,7 @@ pageextension 50008 "Posted Sales Inv. Combined" extends "Posted Sales Invoice"
         addafter("Due Date")
         {
 
-            field("Cargo Receipt Remarks"; Rec."Cargo Receipt Remarks")
+            field(Remarks; Rec.Remarks)
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Cargo Receipt Remarks field.', Comment = '%';

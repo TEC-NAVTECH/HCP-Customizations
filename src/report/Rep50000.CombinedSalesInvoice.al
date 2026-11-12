@@ -66,7 +66,7 @@ report 50000 "Combined Sales Invoice"
             column(Header_WorkDescription; WorkDescriptionText)
             {
             }
-            column(Cargo_Receipt_Remarks; "Cargo Receipt Remarks")
+            column(Cargo_Receipt_Remarks; RemarksRec.Description)
             {
 
             }
@@ -180,9 +180,12 @@ report 50000 "Combined Sales Invoice"
                 end;
             }
             trigger OnAfterGetRecord()
+            var
+
             begin
                 BuildDocumentTexts();
                 BuildLayoutInstances();
+                if RemarksRec.Get(Header.Remarks) then;
             end;
         }
     }
@@ -254,6 +257,7 @@ report 50000 "Combined Sales Invoice"
         FirstCopyPrinted: Boolean;
         SelectionRequiredErr: Label 'Choose an Invoice Type before printing.';
         SelectionEmptyErr: Label 'Invoice Type %1 has no layouts set up.', Comment = '%1 = selection code';
+        RemarksRec: record Remarks;
 
     trigger OnInitReport()
     begin

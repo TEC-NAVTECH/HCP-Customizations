@@ -34,7 +34,7 @@ pageextension 50005 "Sales Order" extends "Sales Order"
         addafter("Due Date")
         {
 
-            field("Cargo Receipt Remarks"; Rec."Cargo Receipt Remarks")
+            field("Cargo Receipt Remarks"; Rec.Remarks)
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Cargo Receipt Remarks field.', Comment = '%';
