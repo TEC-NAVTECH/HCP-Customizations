@@ -9,5 +9,12 @@ pageextension 50004 "Customer card" extends "Customer Card"
                 ApplicationArea = All;
             }
         }
+        addafter(city)
+        {
+            field(Territorycode; Rec."Territory Code")
+            {
+                ApplicationArea = All;
+            }
+        }
     }
 }
