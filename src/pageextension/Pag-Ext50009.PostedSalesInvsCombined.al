@@ -6,7 +6,7 @@ pageextension 50009 "Posted Sales Invs. Combined" extends "Posted Sales Invoices
         {
             action(PrintCombinedInvoice)
             {
-                Caption = 'Print Combined Invoice';
+                Caption = 'Print HCP Combined Invoice';
                 ApplicationArea = All;
                 Image = PrintReport;
                 Promoted = true;
@@ -18,7 +18,7 @@ pageextension 50009 "Posted Sales Invs. Combined" extends "Posted Sales Invoices
                     SalesInvHeader: Record "Sales Invoice Header";
                 begin
                     CurrPage.SetSelectionFilter(SalesInvHeader);
-                    Report.RunModal(Report::"Combined Sales Invoice", true, false, SalesInvHeader);
+                    Report.RunModal(Report::"HCP Combined Sales Invoice", true, false, SalesInvHeader);
                 end;
             }
         }

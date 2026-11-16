@@ -1,6 +1,6 @@
-report 50000 "Combined Sales Invoice"
+report 50000 "HCP Combined Sales Invoice"
 {
-    Caption = 'Combined Sales Invoice';
+    Caption = 'HCP Combined Sales Invoice';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     PreviewMode = PrintLayout;
@@ -15,7 +15,7 @@ report 50000 "Combined Sales Invoice"
             column(CompanyInfo_Name; CompanyInfo.Name)
             {
             }
-            column(CompanyInfo_Name2; CompanyInfo."Name 2")
+            column(CompanyInfo_Name2; CompanyInfo."Company chinese Name")
             {
             }
             column(CompanyInfo_AddressText; CompanyAddressText)
@@ -482,13 +482,14 @@ report 50000 "Combined Sales Invoice"
             TempPrintLine.Description := CopyStr(DescriptionText, 1, MaxStrLen(TempPrintLine.Description));
             TempPrintLine."Unit Price" := InvLine."Unit Price";
             if LayoutNo <> 6 then
-                TempPrintLine."UOM Text" := CopyStr(InvLine."Unit of Measure Code", 1, MaxStrLen(TempPrintLine."UOM Text"));
+                TempPrintLine."UOM Text" := CopyStr(InvLine."Unit of Measure", 1, MaxStrLen(TempPrintLine."UOM Text"));
             TempPrintLine.Quantity := InvLine.Quantity;
             TempPrintLine.Amount := InvLine.Amount;
             TempPrintLine.Insert();
             if LayoutNo <> 6 then
                 AddTrackingRows(RowNo, InvLine);
-        // AddCommentRows(RowNo, InvLine."Line No.");
+            //AddCommentRows(RowNo, InvLine."Line No.");
+            AddItemCommentRows(RowNo, InvLine."Line No.");
         until InvLine.Next() = 0;
     end;
 
@@ -523,6 +524,38 @@ report 50000 "Combined Sales Invoice"
         until CommentLine.Next() = 0;
     end;
 
+    local procedure AddItemCommentRows(var RowNo: Integer; PreviousItemLineNo: Integer)
+    var
+        CommentLine: Record "Sales Comment Line";
+    begin
+
+        CommentLine.Reset();
+        CommentLine.SetRange(commentline."Document Type", commentline."Document Type"::"Posted Invoice");
+        CommentLine.SetRange("No.", Header."No.");
+        CommentLine.SetFilter("Document Line No.", '=%1', PreviousItemLineNo);
+        //CommentLine.SetCurrentKey("Document No.", "Line No.");
+        if not CommentLine.FindSet() then
+            exit;
+        repeat
+            // ---------------------------------------------------
+            // Only process Comment lines.
+            // Stop when the next normal invoice line is reached.
+            // ---------------------------------------------------
+
+            if CommentLine.Comment <> '' then begin
+                RowNo += 1;
+                TempPrintLine.Init();
+                // Row Type 3 = Comment
+                TempPrintLine."Row Type" := 3;
+                TempPrintLine."Row No." := RowNo;
+                TempPrintLine.Description := CopyStr(CommentLine.Comment, 1,
+                        MaxStrLen(
+                            TempPrintLine.Description));
+                TempPrintLine.Insert();
+            end;
+        until CommentLine.Next() = 0;
+    end;
+
     local procedure AddTrackingRows(var RowNo: Integer; InvLine: Record "Sales Invoice Line")
     var
         ValueEntry: Record "Value Entry";
@@ -539,6 +572,7 @@ report 50000 "Combined Sales Invoice"
         ValueEntry.SetRange("Document No.", InvLine."Document No.");
         ValueEntry.SetRange("Document Line No.", InvLine."Line No.");
         ValueEntry.SetRange("Item Ledger Entry Type", ValueEntry."Item Ledger Entry Type"::Sale);
+        valueEntry.SetRange("Document Type", valueEntry."Document Type"::"Sales Invoice");
         if ValueEntry.FindSet() then
             repeat
                 if not TempItemLedgEntry.Get(ValueEntry."Item Ledger Entry No.") then

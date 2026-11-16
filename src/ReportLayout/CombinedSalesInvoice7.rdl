@@ -1,26 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>79d2aabe-4d99-490a-bacd-630712362f2a</rd:ReportID>
-  <am:AuthoringMetadata>
-    <am:CreatedBy>
-      <am:Name>PBIRB</am:Name>
-      <am:Version>15.7.1819.28</am:Version>
-    </am:CreatedBy>
-    <am:UpdatedBy>
-      <am:Name>PBIRB</am:Name>
-      <am:Version>15.7.1816.327</am:Version>
-    </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-09-29T09:30:00.8273300Z</am:LastModifiedTimestamp>
-  </am:AuthoringMetadata>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
-      <rd:SecurityType>None</rd:SecurityType>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cbc59bcc-3f84-48c2-b97f-7ce37798e33c</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -1516,7 +1503,6 @@
               </Style>
             </Textbox>
             <Textbox Name="Tb_CompanyName2">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
@@ -1537,8 +1523,8 @@
               </Paragraphs>
               <Top>0.2525in</Top>
               <Left>0.87in</Left>
-              <Height>0.22in</Height>
-              <Width>4in</Width>
+              <Height>0.22111in</Height>
+              <Width>3.50889in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <VerticalAlign>Top</VerticalAlign>
@@ -2016,7 +2002,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.52in</Top>
+              <Top>1.295in</Top>
               <Left>0in</Left>
               <Height>0.16in</Height>
               <Width>0.87in</Width>
@@ -2030,7 +2016,6 @@
               </Style>
             </Textbox>
             <Textbox Name="Tb_SoldTo">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
@@ -2048,9 +2033,9 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.52in</Top>
+              <Top>1.295in</Top>
               <Left>0.87in</Left>
-              <Height>0.95in</Height>
+              <Height>1.0125in</Height>
               <Width>2.65in</Width>
               <ZIndex>16</ZIndex>
               <Style>
@@ -2080,7 +2065,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.52in</Top>
+              <Top>1.295in</Top>
               <Left>3.6in</Left>
               <Height>0.16in</Height>
               <Width>0.77889in</Width>
@@ -2097,7 +2082,6 @@
               </Style>
             </Textbox>
             <Textbox Name="Tb_ShipTo">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
@@ -2115,9 +2099,9 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.52in</Top>
+              <Top>1.295in</Top>
               <Left>4.39278in</Left>
-              <Height>0.95in</Height>
+              <Height>1.0125in</Height>
               <Width>3.04722in</Width>
               <ZIndex>18</ZIndex>
               <Style>
@@ -2147,7 +2131,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.6in</Top>
+              <Top>2.375in</Top>
               <Left>4.24in</Left>
               <Height>0.16in</Height>
               <Width>2in</Width>
@@ -2179,7 +2163,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>0in</Left>
               <Height>0.22in</Height>
               <Width>0.92in</Width>
@@ -2218,7 +2202,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>0in</Left>
               <Height>0.25in</Height>
               <Width>0.92in</Width>
@@ -2256,7 +2240,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>0.92in</Left>
               <Height>0.22in</Height>
               <Width>1.02in</Width>
@@ -2295,7 +2279,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>0.92in</Left>
               <Height>0.25in</Height>
               <Width>1.02in</Width>
@@ -2333,7 +2317,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>1.94in</Left>
               <Height>0.22in</Height>
               <Width>0.83in</Width>
@@ -2372,7 +2356,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>1.94in</Left>
               <Height>0.25in</Height>
               <Width>0.83in</Width>
@@ -2410,7 +2394,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>2.77in</Left>
               <Height>0.22in</Height>
               <Width>1.5in</Width>
@@ -2449,7 +2433,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>2.77in</Left>
               <Height>0.25in</Height>
               <Width>1.5in</Width>
@@ -2487,7 +2471,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>4.27in</Left>
               <Height>0.22in</Height>
               <Width>1.17in</Width>
@@ -2526,7 +2510,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>4.27in</Left>
               <Height>0.25in</Height>
               <Width>1.17in</Width>
@@ -2564,7 +2548,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>5.44in</Left>
               <Height>0.22in</Height>
               <Width>1in</Width>
@@ -2603,7 +2587,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>5.44in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
@@ -2641,7 +2625,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>6.44in</Left>
               <Height>0.22in</Height>
               <Width>1.03in</Width>
@@ -2680,7 +2664,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>6.44in</Left>
               <Height>0.25in</Height>
               <Width>1.03in</Width>
@@ -2718,7 +2702,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>0in</Left>
               <Height>0.22in</Height>
               <Width>0.92in</Width>
@@ -2757,7 +2741,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>0in</Left>
               <Height>0.25in</Height>
               <Width>0.92in</Width>
@@ -2795,7 +2779,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>0.92in</Left>
               <Height>0.22in</Height>
               <Width>1.02in</Width>
@@ -2834,7 +2818,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>0.92in</Left>
               <Height>0.25in</Height>
               <Width>1.02in</Width>
@@ -2872,7 +2856,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>1.94in</Left>
               <Height>0.22in</Height>
               <Width>0.83in</Width>
@@ -2911,7 +2895,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>1.94in</Left>
               <Height>0.25in</Height>
               <Width>0.83in</Width>
@@ -2949,7 +2933,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.78in</Top>
+              <Top>2.555in</Top>
               <Left>2.77in</Left>
               <Height>0.22in</Height>
               <Width>4.7in</Width>
@@ -2988,7 +2972,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3in</Top>
+              <Top>2.775in</Top>
               <Left>2.77in</Left>
               <Height>0.25in</Height>
               <Width>4.7in</Width>
@@ -3040,7 +3024,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>0in</Left>
               <Height>0.23in</Height>
               <Width>0.44in</Width>
@@ -3079,7 +3063,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>0.44in</Left>
               <Height>0.23in</Height>
               <Width>1.28in</Width>
@@ -3118,7 +3102,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>1.72in</Left>
               <Height>0.23in</Height>
               <Width>2.4in</Width>
@@ -3157,7 +3141,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>4.12in</Left>
               <Height>0.23in</Height>
               <Width>1.3in</Width>
@@ -3196,7 +3180,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>5.42in</Left>
               <Height>0.23in</Height>
               <Width>0.95in</Width>
@@ -3235,7 +3219,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>6.37in</Left>
               <Height>0.23in</Height>
               <Width>1.1in</Width>
@@ -3288,7 +3272,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>0in</Left>
               <Height>0.23in</Height>
               <Width>0.44in</Width>
@@ -3327,7 +3311,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>0.44in</Left>
               <Height>0.23in</Height>
               <Width>1.28in</Width>
@@ -3366,7 +3350,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>1.72in</Left>
               <Height>0.23in</Height>
               <Width>4.65in</Width>
@@ -3405,7 +3389,7 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>3.25in</Top>
+              <Top>3.025in</Top>
               <Left>6.37in</Left>
               <Height>0.23in</Height>
               <Width>1.1in</Width>
@@ -3426,7 +3410,6 @@
               </Style>
             </Textbox>
             <Textbox Name="Textbox2">
-              <rd:DefaultName>Textbox2</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3440,10 +3423,11 @@
                   <Style />
                 </Paragraph>
               </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.93556in</Top>
-              <Left>5.82in</Left>
+              <Left>5.2575in</Left>
               <Height>0.25in</Height>
-              <Width>1.41667in</Width>
+              <Width>1.97917in</Width>
               <ZIndex>52</ZIndex>
               <Visibility>
                 <Hidden>=ReportItems!H_StampCaption.Value &lt;&gt; "CARGO RECEIPT"</Hidden>
@@ -4031,6 +4015,8 @@
     </ReportSection>
   </ReportSections>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>79d2aabe-4d99-490a-bacd-630712362f2a</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
