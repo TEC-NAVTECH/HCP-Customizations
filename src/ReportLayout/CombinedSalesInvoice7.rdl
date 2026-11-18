@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>79d2aabe-4d99-490a-bacd-630712362f2a</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2026-11-18T05:22:21.6632703Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
+      <rd:SecurityType>None</rd:SecurityType>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cbc59bcc-3f84-48c2-b97f-7ce37798e33c</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -64,8 +77,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <Style>
@@ -95,8 +106,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>1</ZIndex>
@@ -127,8 +136,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>2</ZIndex>
@@ -159,8 +166,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>3</ZIndex>
@@ -191,8 +196,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>4</ZIndex>
@@ -223,8 +226,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>5</ZIndex>
@@ -255,8 +256,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>6</ZIndex>
@@ -287,8 +286,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>7</ZIndex>
@@ -319,8 +316,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>8</ZIndex>
@@ -351,8 +346,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>9</ZIndex>
@@ -383,8 +376,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>10</ZIndex>
@@ -415,8 +406,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>11</ZIndex>
@@ -447,8 +436,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>12</ZIndex>
@@ -479,8 +466,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>13</ZIndex>
@@ -511,8 +496,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>14</ZIndex>
@@ -543,8 +526,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>15</ZIndex>
@@ -575,8 +556,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>16</ZIndex>
@@ -607,8 +586,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>17</ZIndex>
@@ -639,8 +616,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>18</ZIndex>
@@ -671,8 +646,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>19</ZIndex>
@@ -703,8 +676,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>20</ZIndex>
@@ -735,8 +706,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>21</ZIndex>
@@ -767,8 +736,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>22</ZIndex>
@@ -799,8 +766,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>23</ZIndex>
@@ -831,8 +796,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>24</ZIndex>
@@ -863,8 +826,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>25</ZIndex>
@@ -895,8 +856,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.01in</Height>
                               <Width>0.4in</Width>
                               <ZIndex>26</ZIndex>
@@ -1207,8 +1166,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.16in</Height>
                               <Width>0.72in</Width>
                               <Style>
@@ -1237,7 +1194,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
                               <Left>0.76in</Left>
                               <Height>0.16in</Height>
                               <Width>0.54in</Width>
@@ -1311,8 +1267,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
-                              <Left>0in</Left>
                               <Height>0.16in</Height>
                               <Width>0.72111in</Width>
                               <Style>
@@ -1341,7 +1295,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0in</Top>
                               <Left>0.72111in</Left>
                               <Height>0.16in</Height>
                               <Width>0.37889in</Width>
@@ -1361,6 +1314,141 @@
                         </Rectangle>
                       </CellContents>
                     </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.17361in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>1pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Normal</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>1pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!PrintLine_Description.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
@@ -1422,6 +1510,18 @@
                               <Value>=Fields!PrintLine_RowNo.Value</Value>
                             </SortExpression>
                           </SortExpressions>
+                          <TablixMembers>
+                            <TablixMember>
+                              <Visibility>
+                                <Hidden>=Fields!PrintLine_RowType.Value = 4</Hidden>
+                              </Visibility>
+                            </TablixMember>
+                            <TablixMember>
+                              <Visibility>
+                                <Hidden>=Fields!PrintLine_RowType.Value &lt;&gt; 4</Hidden>
+                              </Visibility>
+                            </TablixMember>
+                          </TablixMembers>
                           <DataElementOutput>Output</DataElementOutput>
                           <KeepTogether>true</KeepTogether>
                         </TablixMember>
@@ -1434,9 +1534,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0in</Top>
-            <Left>0in</Left>
-            <Height>0.18in</Height>
+            <Height>0.35361in</Height>
             <Width>7.47in</Width>
             <Style>
               <Border>
@@ -1461,7 +1559,6 @@
               <MIMEType>image/png</MIMEType>
               <Sizing>FitProportional</Sizing>
               <Top>0.02in</Top>
-              <Left>0in</Left>
               <Height>1.23in</Height>
               <Width>0.82833in</Width>
               <Style>
@@ -2003,7 +2100,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>1.295in</Top>
-              <Left>0in</Left>
               <Height>0.16in</Height>
               <Width>0.87in</Width>
               <ZIndex>15</ZIndex>
@@ -2164,7 +2260,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>2.555in</Top>
-              <Left>0in</Left>
               <Height>0.22in</Height>
               <Width>0.92in</Width>
               <ZIndex>20</ZIndex>
@@ -2203,7 +2298,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>2.775in</Top>
-              <Left>0in</Left>
               <Height>0.25in</Height>
               <Width>0.92in</Width>
               <ZIndex>21</ZIndex>
@@ -2703,7 +2797,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>2.555in</Top>
-              <Left>0in</Left>
               <Height>0.22in</Height>
               <Width>0.92in</Width>
               <ZIndex>34</ZIndex>
@@ -2742,7 +2835,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>2.775in</Top>
-              <Left>0in</Left>
               <Height>0.25in</Height>
               <Width>0.92in</Width>
               <ZIndex>35</ZIndex>
@@ -3025,7 +3117,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>3.025in</Top>
-              <Left>0in</Left>
               <Height>0.23in</Height>
               <Width>0.44in</Width>
               <ZIndex>42</ZIndex>
@@ -3273,7 +3364,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>3.025in</Top>
-              <Left>0in</Left>
               <Height>0.23in</Height>
               <Width>0.44in</Width>
               <ZIndex>48</ZIndex>
@@ -3410,6 +3500,7 @@
               </Style>
             </Textbox>
             <Textbox Name="Textbox2">
+              <rd:DefaultName>Textbox2</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3423,7 +3514,6 @@
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.93556in</Top>
               <Left>5.2575in</Left>
               <Height>0.25in</Height>
@@ -3452,7 +3542,6 @@
           <ReportItems>
             <Line Name="Ln_FooterRule">
               <Top>0.02in</Top>
-              <Left>0in</Left>
               <Height>0in</Height>
               <Width>7.47in</Width>
               <Visibility>
@@ -3540,7 +3629,6 @@
                 </Paragraph>
               </Paragraphs>
               <Top>0.1in</Top>
-              <Left>0in</Left>
               <Height>0.5in</Height>
               <Width>2in</Width>
               <ZIndex>1</ZIndex>
@@ -3565,7 +3653,7 @@
                       <Value>=ReportItems!H_WorkDescription.Value</Value>
                       <Style>
                         <FontFamily>Microsoft JhengHei</FontFamily>
-                        <FontSize>9pt</FontSize>
+                        <FontSize>11pt</FontSize>
                         <FontWeight>Normal</FontWeight>
                       </Style>
                     </TextRun>
@@ -4015,8 +4103,6 @@
     </ReportSection>
   </ReportSections>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>79d2aabe-4d99-490a-bacd-630712362f2a</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>

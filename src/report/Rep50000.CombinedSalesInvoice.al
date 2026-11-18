@@ -458,6 +458,8 @@ report 50000 "HCP Combined Sales Invoice"
         InvLine: Record "Sales Invoice Line";
         RowNo: Integer;
         DisplayLineNo: Integer;
+
+
         DescriptionText: Text;
     begin
         TempPrintLine.Reset();
@@ -466,16 +468,20 @@ report 50000 "HCP Combined Sales Invoice"
         // InvLine.SetFilter(Type, '<>%1', InvLine.Type::" ");
         if not InvLine.FindSet() then
             exit;
+
         repeat
-            DisplayLineNo += 1;
             RowNo += 1;
             DescriptionText := InvLine.Description;
             if InvLine."Description 2" <> '' then
                 DescriptionText += ' ' + InvLine."Description 2";
+
             TempPrintLine.Init();
             TempPrintLine."Row No." := RowNo;
             TempPrintLine."Row Type" := 1;
-            TempPrintLine."Line No. Text" := Format(DisplayLineNo);
+            if InvLine.Type <> InvLine.Type::" " then begin
+                DisplayLineNo += 1;
+                TempPrintLine."Line No. Text" := Format(DisplayLineNo);
+            end;
             TempPrintLine."Product Code" := CopyStr(InvLine."No.", 1, MaxStrLen(TempPrintLine."Product Code"));
             if (LayoutNo <> 6) and (InvLine."Location Code" <> '') then
                 TempPrintLine."Product Code 2" := CopyStr(StrSubstNo('( %1 )', InvLine."Location Code"), 1, MaxStrLen(TempPrintLine."Product Code 2"));
@@ -486,12 +492,31 @@ report 50000 "HCP Combined Sales Invoice"
             TempPrintLine.Quantity := InvLine.Quantity;
             TempPrintLine.Amount := InvLine.Amount;
             TempPrintLine.Insert();
-            if LayoutNo <> 6 then
+
+            if LayoutNo <> 6 then begin
                 AddTrackingRows(RowNo, InvLine);
-            //AddCommentRows(RowNo, InvLine."Line No.");
-            AddItemCommentRows(RowNo, InvLine."Line No.");
+                AddItemCommentRows(RowNo, InvLine."Line No.");
+                AddItemDiscountRow(RowNo, InvLine."Line No.", InvLine);
+            end;
         until InvLine.Next() = 0;
+
     end;
+
+    // local procedure BuildDiscountText(InvLine: Record "Sales Invoice Line"): Text
+    // begin
+    //     if InvLine."Line Discount %" <= 0 then
+    //         exit('');
+
+    //     exit('Item discount % ' + Format(InvLine."Line Discount %", 0, '<Precision,0:2><Standard Format,0>'));
+    // end;
+
+    // local procedure GetDiscountAmount(InvLine: Record "Sales Invoice Line"): Decimal
+    // begin
+    //     if InvLine."Line Discount %" <= 0 then
+    //         exit(0);
+
+    //     exit(InvLine."Line Discount Amount");
+    // end;
 
     local procedure AddCommentRows(var RowNo: Integer; PreviousItemLineNo: Integer)
     var
@@ -554,6 +579,21 @@ report 50000 "HCP Combined Sales Invoice"
                 TempPrintLine.Insert();
             end;
         until CommentLine.Next() = 0;
+    end;
+
+    local procedure AddItemDiscountRow(var RowNo: Integer; PreviousItemLineNo: Integer; pInvLine: Record "Sales Invoice Line")
+    begin
+        if pInvLine."Line Discount %" <= 0 then
+            exit;
+
+        RowNo += 1;
+        TempPrintLine.Init();
+        TempPrintLine."Row No." := RowNo;
+        TempPrintLine."Row Type" := 4;
+        TempPrintLine.Description :=
+            'Item discount % ' + Format(pInvLine."Line Discount %", 0, '<Precision,0:2><Standard Format,0>') +
+            '   -   ' + Format(pInvLine."Line Discount Amount", 0, '<Precision,2:2><Standard Format,0>');
+        TempPrintLine.Insert();
     end;
 
     local procedure AddTrackingRows(var RowNo: Integer; InvLine: Record "Sales Invoice Line")
